@@ -4,8 +4,8 @@
       <b-tooltip
         v-show="!onlyLinked || app.isLinkedApp"
         :class="{ 'hover-show': app.show_on_hover && enableHover }"
-        :key="app.name"
         :label="app.name"
+        :key="app.id"
         position="is-bottom"
       >
         <b-button
